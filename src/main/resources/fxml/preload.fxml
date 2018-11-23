@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="299.0" prefWidth="602.0" scaleShape="false" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.splash.ui.PreloadController">
+   <children>
+      <Pane prefHeight="299.0" prefWidth="602.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fx:id="phoneImage" nodeOrientation="INHERIT" pickOnBounds="true" smooth="false" />
+            <Label fx:id="main" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="287.0" prefWidth="614.0" text="TESTER" textFill="WHITE" />
+            <Label fx:id="value" alignment="CENTER" layoutX="203.0" layoutY="225.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="28.0" prefWidth="229.0" text="0%" textAlignment="CENTER" textFill="#e80a0a">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <ProgressBar fx:id="progress" layoutX="11.0" layoutY="259.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="28.0" prefWidth="577.0" progress="0.0" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
