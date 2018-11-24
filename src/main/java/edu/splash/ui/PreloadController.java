@@ -22,6 +22,9 @@ public class PreloadController {
     
     @FXML 
     private Label value;
+    
+    @FXML 
+    private Label inform;
 
     @FXML 
     private ProgressBar progress;
@@ -47,6 +50,11 @@ public class PreloadController {
 	}
 
 	
+	
+	public Label getInform() {
+		return inform;
+	}
+
 	public ProgressBar getProgress() {
 		return progress;
 	}

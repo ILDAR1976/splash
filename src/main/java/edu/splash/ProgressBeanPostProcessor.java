@@ -31,20 +31,19 @@ class ProgressBeanPostProcessor implements BeanPostProcessor, ApplicationListene
 		
 		counter+= 1;
 		log.info("the bean name: " + beanName + " № " + counter);
-		LauncherImpl.notifyPreloader(application, new CurrentPreloader.ProgressNotification(   ((counter * 100)/32)));
-		
+		LauncherImpl.notifyPreloader(application, new CurrentPreloader.PreloaderProgressNotification(   ((counter * 100)/32),beanName));
+
 		return bean;
 	}
 
 	@Override
 	public Object postProcessAfterInitialization(Object bean, String beanName) throws BeansException {
-		//log.info("name2 " + beanName);
 		return bean;
 	}	
 
 	@Override
 	public void onApplicationEvent(ContextRefreshedEvent event) {
-		log.info(">>>>>>>>>> " + event.toString());
+		log.info("- " + event.toString());
 		beans.onCompleted();
 	}
 

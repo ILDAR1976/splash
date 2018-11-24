@@ -18,8 +18,7 @@ public class Application extends AbstractJavaFxApplicationSupport {
     private Stage applicationStage;
 
     public Application() {
-        // Constructor is called after BEFORE_LOAD.
-        System.out.println(Application.STEP() + "MyApplication constructor called, thread: " + Thread.currentThread().getName());
+       System.out.println(Application.STEP() + "MyApplication constructor called, thread: " + Thread.currentThread().getName());
     }
 
     @Value("JavaFX and spring application")
@@ -34,8 +33,8 @@ public class Application extends AbstractJavaFxApplicationSupport {
     public void start(Stage stage) throws Exception {
     	applicationStage = stage;
     	stage.setTitle(windowTitle);
-        stage.setScene(new Scene(view.getView()));
-
+    	Scene scene = new Scene(view.getView());
+        stage.setScene(scene);
         stage.centerOnScreen();
         stage.show();
     }

@@ -1,0 +1,13 @@
+.background {
+    -fx-background-color: #1d1d1d;
+}
+
+.progress-bar {
+    -fx-base: transparent;
+    -fx-control-inner-background: transparent;
+    -fx-background-color: transparent;
+    -fx-table-cell-border-color: transparent;
+    -fx-table-header-border-color: transparent;
+    -fx-padding: 0 0 0 0;
+}
+
